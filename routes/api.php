@@ -55,7 +55,7 @@ Route::post('/courier/modify/profile',[ApiCourierController::class,'courierProfi
 Route::post('/courier/cashout',[ApiCourierController::class,'cashout']);
 Route::post('/courier/cashoutView',[ApiCourierController::class,'cashoutView']);
 
-//CUSTOMER --->AYESHA
+//CUSTOMER --->Faiyaz
 Route::get('/customer/home',[APICustomerController::class,'home'])->middleware("AuthUserCustomer");
 Route::post('/customer/account',[APICustomerController::class,'getInfo'])->middleware("AuthUserCustomer");
 Route::post('/customer/modify/account',[APICustomerController::class,'customerModify'])->middleware("AuthUserCustomer");
@@ -77,7 +77,7 @@ Route::post('/customer/search',[APICustomerController::class,'search'])->middlew
 Route::post('/customer/complain',[APICustomerController::class,'complainEmail'])->middleware("AuthUserCustomer");
 
 
-//MANAGER ---> TONMOY
+//MANAGER 
 //homepage
 Route::get('/manager/home',[ApiManagerController::class,'homepage'])->middleware("ApiManagerAuth");
 //medicine table
